@@ -42,7 +42,7 @@ const Navbar = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm font-medium tracking-wide transition-colors hover:text-primary text-[hsl(var(--dark-section-foreground))]"
+                className="text-sm font-medium tracking-wide transition-colors hover:text-[hsl(var(--dark-section))] text-[hsl(var(--dark-section-foreground))]"
               >
                 {link.name}
               </button>
@@ -66,13 +66,13 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-[hsl(var(--dark-section-foreground))]/10 animate-fade-in bg-[hsl(var(--dark-section))]/95 backdrop-blur-md rounded-b-xl">
+          <div className="md:hidden p-4 border-t border-[hsl(var(--dark-section-foreground))]/10 animate-fade-in bg-white backdrop-blur-md">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-sm font-medium tracking-wide transition-colors hover:text-primary py-2 text-[hsl(var(--dark-section-foreground))] text-left"
+                  className="text-sm font-medium tracking-wide transition-colors hover:text-[hsl(var(--dark-section))] py-2 text-[hsl(var(--dark-section-foreground))] text-black text-left"
                 >
                   {link.name}
                 </button>

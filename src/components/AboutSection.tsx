@@ -7,11 +7,11 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
       <CirclesPattern />
-      <DotsPattern className="text-primary" />
+      <DotsPattern className="text-[hsl(var(--dark-section))]" />
       
       <div className="container mx-auto px-4 relative z-10">
         <AnimatedSection className="text-center mb-12">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
             About Us
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -26,10 +26,10 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <AnimatedSection>
-            <Card className="h-full bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-colors shadow-lg">
+            <Card className="h-full bg-card/80 backdrop-blur-sm border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors shadow-lg">
               <CardContent className="p-6 md:p-8">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <Target className="h-6 w-6 text-primary" />
+                <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-4">
+                  <Target className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
@@ -41,10 +41,10 @@ const AboutSection = () => {
             </Card>
           </AnimatedSection>
           <AnimatedSection delay={200}>
-            <Card className="h-full bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-colors shadow-lg">
+            <Card className="h-full bg-card/80 backdrop-blur-sm border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors shadow-lg">
               <CardContent className="p-6 md:p-8">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <Eye className="h-6 w-6 text-primary" />
+                <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-4">
+                  <Eye className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base">

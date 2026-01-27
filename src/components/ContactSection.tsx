@@ -49,7 +49,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="text-center mb-10 md:mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/20 text-white rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/20 text-white rounded-full text-sm font-medium mb-4">
               Contact Us
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -64,13 +64,13 @@ const ContactSection = () => {
             {/* Contact Info */}
             <AnimatedSection className="space-y-6">
               {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(var(--dark-section-foreground))]/5 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/40">
-                  <div className="h-12 w-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-white/90 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/40">
+                  <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))] flex items-center justify-center flex-shrink-0">
                     <item.icon className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">{item.title}</h4>
-                    <p className="text-[hsl(var(--dark-section-foreground))]/70 text-sm">
+                    <h4 className="font-semibold mb-1 text-black">{item.title}</h4>
+                    <p className="text-black text-sm">
                       {item.content}
                     </p>
                   </div>
@@ -87,7 +87,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="bg-[hsl(var(--dark-section-foreground))]/10 border-[hsl(var(--dark-section-foreground))]/20 text-[hsl(var(--dark-section-foreground))] placeholder:text-[hsl(var(--dark-section-foreground))]/50"
+                  className="bg-white/90 border-[hsl(var(--dark-section-foreground))]/20 text-black placeholder:text-[hsl(var(--dark-section))]"
                 />
                 <Input
                   type="email"
@@ -95,7 +95,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="bg-[hsl(var(--dark-section-foreground))]/10 border-[hsl(var(--dark-section-foreground))]/20 text-[hsl(var(--dark-section-foreground))] placeholder:text-[hsl(var(--dark-section-foreground))]/50"
+                  className="bg-white/90 border-[hsl(var(--dark-section-foreground))]/20 text-black placeholder:text-[hsl(var(--dark-section))] "
                 />
                 <Textarea
                   placeholder="Tell us about your project..."
@@ -103,12 +103,12 @@ const ContactSection = () => {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={4}
-                  className="bg-[hsl(var(--dark-section-foreground))]/10 border-[hsl(var(--dark-section-foreground))]/20 text-[hsl(var(--dark-section-foreground))] placeholder:text-[hsl(var(--dark-section-foreground))]/50 resize-none"
+                  className="bg-white/90 border-[hsl(var(--dark-section-foreground))]/20 text-black placeholder:text-[hsl(var(--dark-section))] resize-none"
                 />
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full bg-white text-[hsl(var(--dark-section))] hover:bg-white/90"
+                  className="w-full bg-[hsl(var(--dark-section))] text-white hover:bg-[hsl(var(--dark-section))]/60"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                   <Send className="ml-2 h-4 w-4" />

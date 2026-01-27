@@ -33,7 +33,7 @@ const Blog = () => {
       <section className="pt-32 pb-16 md:pb-24 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               Blog & Insights
             </span>
           </AnimatedSection>
@@ -90,7 +90,7 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             <AnimatedSection>
               <div className="flex items-center gap-2 mb-8">
-                <TrendingUp className="h-5 w-5 text-primary" />
+                <TrendingUp className="h-5 w-5 text-[hsl(var(--dark-section))]" />
                 <h2 className="text-2xl font-bold text-foreground">Featured Articles</h2>
               </div>
             </AnimatedSection>
@@ -98,7 +98,7 @@ const Blog = () => {
               {featuredPosts.map((post, index) => (
                 <AnimatedSection key={post.id} delay={index * 100}>
                   <Link to={`/blog/${post.slug}`}>
-                    <Card className="group bg-card border-border hover:border-primary/50 hover:shadow-xl transition-all duration-300 overflow-hidden h-full cursor-pointer">
+                    <Card className="group bg-card border-border hover:border-[hsl(var(--dark-section))]/50 hover:shadow-xl transition-all duration-300 overflow-hidden h-full cursor-pointer">
                       <div className="h-48 overflow-hidden">
                         <img
                           src={post.image}
@@ -110,7 +110,7 @@ const Blog = () => {
                         <Badge variant="secondary" className="mb-3">
                           {post.category}
                         </Badge>
-                        <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2 text-lg">
+                        <h3 className="font-semibold text-foreground mb-2 group-hover:text-[hsl(var(--dark-section))] transition-colors line-clamp-2 text-lg">
                           {post.title}
                         </h3>
                         <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
@@ -132,7 +132,7 @@ const Blog = () => {
                             {post.readTime}
                           </div>
                         </div>
-                        <div className="mt-4 flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                        <div className="mt-4 flex items-center text-[hsl(var(--dark-section))] text-sm font-medium group-hover:gap-2 transition-all">
                           Read More <ArrowRight className="h-4 w-4 ml-1" />
                         </div>
                       </CardContent>
@@ -156,7 +156,7 @@ const Blog = () => {
               {recentPosts.map((post, index) => (
                 <AnimatedSection key={post.id} delay={index * 100}>
                   <Link to={`/blog/${post.slug}`}>
-                    <Card className="group bg-card border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <Card className="group bg-card border-border hover:border-[hsl(var(--dark-section))]/50 hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <CardContent className="p-6 flex gap-6">
                         <div className="w-32 h-24 rounded-lg overflow-hidden flex-shrink-0">
                           <img
@@ -175,7 +175,7 @@ const Blog = () => {
                               {post.date}
                             </span>
                           </div>
-                          <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors line-clamp-2">
+                          <h3 className="font-semibold text-foreground mb-1 group-hover:text-[hsl(var(--dark-section))] transition-colors line-clamp-2">
                             {post.title}
                           </h3>
                           <p className="text-sm text-muted-foreground line-clamp-1 mb-2">

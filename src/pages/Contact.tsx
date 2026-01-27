@@ -72,7 +72,7 @@ const Contact = () => {
 
       toast.success("Message sent successfully!", {
         description: "We'll get back to you within 24 hours.",
-        icon: <CheckCircle2 className="h-5 w-5 text-primary" />,
+        icon: <CheckCircle2 className="h-5 w-5 text-[hsl(var(--dark-section))]" />,
       });
 
       setFormData({
@@ -99,7 +99,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pb-24 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
             Contact Us
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -122,10 +122,10 @@ const Contact = () => {
                 Get in Touch
               </h2>
               {contactInfo.map((info, index) => (
-                <Card key={index} className="bg-card border-border hover:border-primary/50 transition-colors">
+                <Card key={index} className="bg-card border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <info.icon className="h-5 w-5 text-primary" />
+                    <div className="h-10 w-10 rounded-lg bg-[hsl(var(--dark-section))]/10 flex items-center justify-center flex-shrink-0">
+                      <info.icon className="h-5 w-5 text-[hsl(var(--dark-section))]" />
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground">{info.title}</h3>

@@ -51,15 +51,15 @@ const services = [
 ];
 
 const ServiceCard = ({ service, index }: { service: typeof services[0]; index: number }) => (
-  <Card className="group bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
+  <Card className="group bg-card/80 backdrop-blur-sm border border-border hover:border-[hsl(var(--dark-section))]/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
     <CardContent className="p-5 md:p-6">
       {/* Icon */}
-      <div className="h-12 w-12 md:h-14 md:w-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-        <service.icon className="h-6 w-6 md:h-7 md:w-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+      <div className="h-12 w-12 md:h-14 md:w-14 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[hsl(var(--dark-section))] group-hover:scale-110 transition-all duration-300">
+        <service.icon className="h-6 w-6 md:h-7 md:w-7 text-[hsl(var(--dark-section))] group-hover:text-white transition-colors duration-300" />
       </div>
       
       {/* Title */}
-      <h3 className="font-semibold text-foreground text-base md:text-lg mb-2 md:mb-3 group-hover:text-primary transition-colors duration-300">
+      <h3 className="font-semibold text-foreground text-base md:text-lg mb-2 md:mb-3 group-hover:text-[hsl(var(--dark-section))] transition-colors duration-300">
         {service.title}
       </h3>
       
@@ -82,7 +82,7 @@ const ServicesPreview = () => {
         {/* Header */}
         <AnimatedSection animation="fade-in-up">
           <div className="text-center mb-10 md:mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               What We Do
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">

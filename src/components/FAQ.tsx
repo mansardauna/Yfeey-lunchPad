@@ -30,11 +30,11 @@ const FAQ = () => {
 
   return (
     <section className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
-      <DotsPattern className="text-primary" />
+      <DotsPattern className="text-[hsl(var(--dark-section))]" />
       
       <div className="container mx-auto px-4 relative z-10">
         <AnimatedSection className="text-center mb-10 md:mb-12">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -49,7 +49,7 @@ const FAQ = () => {
               <AnimatedSection key={index} animation="fade-in-up" delay={index * 100}>
                 <div 
                   className={`border border-border rounded-xl overflow-hidden transition-all duration-300 bg-card/80 backdrop-blur-sm ${
-                    openIndex === index ? 'border-primary/50 shadow-lg' : 'hover:border-primary/30'
+                    openIndex === index ? 'border-[hsl(var(--dark-section))]/50 shadow-lg' : 'hover:border-[hsl(var(--dark-section))]/30'
                   }`}
                 >
                   <button
@@ -60,7 +60,7 @@ const FAQ = () => {
                       {faq.question}
                     </span>
                     <div className={`h-8 w-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${
-                      openIndex === index ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
+                      openIndex === index ? 'bg-[hsl(var(--dark-section))] text-white' : 'bg-muted text-muted-foreground'
                     }`}>
                       {openIndex === index ? (
                         <Minus className="h-4 w-4" />

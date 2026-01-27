@@ -11,7 +11,7 @@ const TextStrip = () => {
               <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                 {word}
               </span>
-              <span className="text-primary text-2xl md:text-3xl">✦</span>
+              <span className="text-[hsl(var(--dark-section))] text-2xl md:text-3xl">✦</span>
             </div>
           ))}
         </div>
@@ -23,7 +23,7 @@ const TextStrip = () => {
               <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                 {word}
               </span>
-              <span className="text-primary text-2xl md:text-3xl">✦</span>
+              <span className="text-[hsl(var(--dark-section))] text-2xl md:text-3xl">✦</span>
             </div>
           ))}
         </div>

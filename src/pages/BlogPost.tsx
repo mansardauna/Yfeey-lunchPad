@@ -64,7 +64,7 @@ const BlogPost = () => {
           <AnimatedSection>
             <Link
               to="/blog"
-              className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6"
+              className="inline-flex items-center text-sm text-muted-foreground hover:text-[hsl(var(--dark-section))] transition-colors mb-6"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Blog
@@ -134,7 +134,7 @@ const BlogPost = () => {
             {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection delay={600}>
-                <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-code:text-primary prose-pre:bg-muted prose-pre:text-foreground">
+                <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-[hsl(var(--dark-section))] hover:prose-a:text-[hsl(var(--dark-section))]/80 prose-blockquote:border-[hsl(var(--dark-section))] prose-blockquote:text-muted-foreground prose-code:text-[hsl(var(--dark-section))] prose-pre:bg-muted prose-pre:text-foreground">
                   <ReactMarkdown>{post.content}</ReactMarkdown>
                 </article>
               </AnimatedSection>
@@ -143,8 +143,8 @@ const BlogPost = () => {
               <AnimatedSection delay={700}>
                 <Card className="mt-12 bg-muted/50 border-border">
                   <CardContent className="p-6 flex items-center gap-4">
-                    <div className="h-16 w-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl font-bold text-primary">
+                    <div className="h-16 w-16 rounded-full bg-[hsl(var(--dark-section))]/20 flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl font-bold text-[hsl(var(--dark-section))]">
                         {post.author.split(" ").map((n) => n[0]).join("")}
                       </span>
                     </div>
@@ -175,7 +175,7 @@ const BlogPost = () => {
                         to={`/blog/${relatedPost.slug}`}
                         className="block group"
                       >
-                        <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                        <Card className="bg-card border-border hover:border-[hsl(var(--dark-section))]/50 transition-all duration-300 overflow-hidden">
                           <CardContent className="p-4">
                             <div className="flex gap-3">
                               <div className="w-20 h-16 rounded-lg overflow-hidden flex-shrink-0">
@@ -189,7 +189,7 @@ const BlogPost = () => {
                                 <Badge variant="secondary" className="text-xs mb-1">
                                   {relatedPost.category}
                                 </Badge>
-                                <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                                <h4 className="text-sm font-medium text-foreground group-hover:text-[hsl(var(--dark-section))] transition-colors line-clamp-2">
                                   {relatedPost.title}
                                 </h4>
                                 <p className="text-xs text-muted-foreground mt-1">
@@ -206,10 +206,10 @@ const BlogPost = () => {
 
                 {/* CTA Card */}
                 <AnimatedSection delay={800}>
-                  <Card className="bg-primary text-primary-foreground">
+                  <Card className="bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section))]-foreground">
                     <CardContent className="p-6 text-center">
                       <h3 className="font-semibold mb-2">Need AI Support?</h3>
-                      <p className="text-sm text-primary-foreground/80 mb-4">
+                      <p className="text-sm text-[hsl(var(--dark-section))]-foreground/80 mb-4">
                         Let YGCL help accelerate your startup with AI-powered solutions.
                       </p>
                       <Link to="/contact">

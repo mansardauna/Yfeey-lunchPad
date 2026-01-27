@@ -68,7 +68,7 @@ const CaseStudies = () => {
       <Navbar />
       <section className="pt-32 pb-16 md:pb-24 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">Case Studies</span>
+          <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">Case Studies</span>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Success Stories That Inspire</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Discover how we've helped startups across Africa transform their ideas into successful, AI-powered businesses.</p>
         </div>
@@ -81,12 +81,12 @@ const CaseStudies = () => {
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="relative">
                   <img src={study.image} alt={study.title} className="rounded-2xl shadow-xl w-full aspect-video object-cover" />
-                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">{study.category}</Badge>
+                  <Badge className="absolute top-4 left-4 bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section))]-foreground">{study.category}</Badge>
                 </div>
               </div>
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">{study.title}</h2>
-                <p className="text-lg text-primary mb-4">{study.subtitle}</p>
+                <p className="text-lg text-[hsl(var(--dark-section))] mb-4">{study.subtitle}</p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{study.description}</p>
                 <div className="space-y-4 mb-6">
                   <div><h4 className="font-semibold text-foreground mb-1">The Challenge</h4><p className="text-sm text-muted-foreground">{study.challenge}</p></div>
@@ -96,17 +96,17 @@ const CaseStudies = () => {
                   {study.results.map((result, i) => (
                     <Card key={i} className="bg-muted/50 border-border">
                       <CardContent className="p-4 text-center">
-                        <result.icon className="h-5 w-5 text-primary mx-auto mb-2" />
+                        <result.icon className="h-5 w-5 text-[hsl(var(--dark-section))] mx-auto mb-2" />
                         <p className="text-lg font-bold text-foreground">{result.value}</p>
                         <p className="text-xs text-muted-foreground">{result.label}</p>
                       </CardContent>
                     </Card>
                   ))}
                 </div>
-                <Card className="bg-primary/5 border-primary/20">
+                <Card className="bg-[hsl(var(--dark-section))]/5 border-[hsl(var(--dark-section))]/20">
                   <CardContent className="p-4">
                     <p className="text-sm text-foreground italic mb-2">"{study.testimonial.quote}"</p>
-                    <p className="text-sm font-medium text-primary">{study.testimonial.author}, <span className="text-muted-foreground font-normal">{study.testimonial.role}</span></p>
+                    <p className="text-sm font-medium text-[hsl(var(--dark-section))]">{study.testimonial.author}, <span className="text-muted-foreground font-normal">{study.testimonial.role}</span></p>
                   </CardContent>
                 </Card>
               </div>

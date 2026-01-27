@@ -264,7 +264,7 @@ const About = () => {
 
       toast.success("Message sent successfully!", {
         description: "We'll get back to you within 24 hours.",
-        icon: <CheckCircle2 className="h-5 w-5 text-primary" />,
+        icon: <CheckCircle2 className="h-5 w-5 text-[hsl(var(--dark-section))]" />,
       });
 
       setFormData({
@@ -293,10 +293,10 @@ const About = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <AnimatedSection key={index} delay={index * 100}>
-            <Card className="bg-card border-border hover:shadow-lg hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 h-full">
+            <Card className="bg-card border-border hover:shadow-lg hover:border-[hsl(var(--dark-section))]/50 transition-all duration-300 hover:-translate-y-1 h-full">
               <CardContent className="p-6">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <service.icon className="h-6 w-6 text-primary" />
+                <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2">{service.title}</h4>
                 <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -313,15 +313,15 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-28 pb-16 md:pb-24 bg-gradient-to-b from-primary/5 to-background">
+      <section className="pt-28 pb-16 md:pb-24 bg-gradient-to-b from-[hsl(var(--dark-section))]/5 to-background">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               About YGCL
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               YFEEY GLOBAL CONCEPT<br />
-              <span className="text-primary">(YGCL)</span>
+              <span className="text-[hsl(var(--dark-section))]">(YGCL)</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
               A software development and AI-powered digital services company based in the Isle of Man. 
@@ -351,7 +351,7 @@ const About = () => {
           <p className="text-sm text-muted-foreground mb-6">Trusted by leading organizations:</p>
           <div className="flex items-center justify-center gap-8 flex-wrap">
             {trustedBrands.map((brand, index) => (
-              <div key={index} className="h-10 w-32 bg-muted rounded flex items-center justify-center text-xs font-medium text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors">
+              <div key={index} className="h-10 w-32 bg-muted rounded flex items-center justify-center text-xs font-medium text-muted-foreground hover:bg-[hsl(var(--dark-section))]/10 hover:text-[hsl(var(--dark-section))] transition-colors">
                 {brand}
               </div>
             ))}
@@ -364,10 +364,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             <AnimatedSection>
-              <Card className="h-full bg-card border-border hover:border-primary/50 transition-colors">
+              <Card className="h-full bg-card border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors">
                 <CardContent className="p-8">
-                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                    <Target className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-6">
+                    <Target className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -380,10 +380,10 @@ const About = () => {
               </Card>
             </AnimatedSection>
             <AnimatedSection delay={200}>
-              <Card className="h-full bg-card border-border hover:border-primary/50 transition-colors">
+              <Card className="h-full bg-card border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors">
                 <CardContent className="p-8">
-                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                    <Eye className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-6">
+                    <Eye className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -403,7 +403,7 @@ const About = () => {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               What We Do
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -441,7 +441,7 @@ const About = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-24 bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section))]-foreground">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <AnimatedSection>
@@ -449,13 +449,13 @@ const About = () => {
                 AI-Powered Solutions<br />
                 for Modern Businesses.
               </h2>
-              <p className="text-primary-foreground/80 leading-relaxed mb-6">
+              <p className="text-[hsl(var(--dark-section))]-foreground/80 leading-relaxed mb-6">
                 At YFEEY, we combine cutting-edge AI technologies with proven software development 
                 practices to deliver solutions that truly transform businesses. Whether you're a 
                 startup looking to automate operations, an entrepreneur building your digital presence, 
                 or a small business seeking to scale—we have the tools and expertise to help.
               </p>
-              <p className="text-primary-foreground/80 leading-relaxed">
+              <p className="text-[hsl(var(--dark-section))]-foreground/80 leading-relaxed">
                 Our track record speaks for itself—from AI-powered content systems to fully automated 
                 YouTube channels, we've helped dozens of clients achieve their digital transformation goals.
               </p>
@@ -463,9 +463,9 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
-                  <div className="text-center p-6 rounded-xl bg-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors">
+                  <div className="text-center p-6 rounded-xl bg-[hsl(var(--dark-section))]-foreground/10 hover:bg-[hsl(var(--dark-section))]-foreground/15 transition-colors">
                     <p className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</p>
-                    <p className="text-sm text-primary-foreground/70 uppercase tracking-wide">{stat.label}</p>
+                    <p className="text-sm text-[hsl(var(--dark-section))]-foreground/70 uppercase tracking-wide">{stat.label}</p>
                   </div>
                 </AnimatedSection>
               ))}
@@ -478,7 +478,7 @@ const About = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               Our Principles
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -491,10 +491,10 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <AnimatedSection key={index} delay={index * 100}>
-                <Card className="bg-card border-border text-center hover:shadow-lg hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 h-full">
+                <Card className="bg-card border-border text-center hover:shadow-lg hover:border-[hsl(var(--dark-section))]/50 transition-all duration-300 hover:-translate-y-1 h-full">
                   <CardContent className="p-6">
-                    <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <value.icon className="h-6 w-6 text-primary" />
+                    <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mx-auto mb-4">
+                      <value.icon className="h-6 w-6 text-[hsl(var(--dark-section))]" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-2">{value.title}</h3>
                     <p className="text-sm text-muted-foreground">{value.description}</p>
@@ -510,7 +510,7 @@ const About = () => {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               Our People
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -523,7 +523,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((member, index) => (
               <AnimatedSection key={index} delay={index * 100}>
-                <Card className="group bg-card border-border overflow-hidden h-full hover:shadow-lg hover:border-primary/50 transition-all duration-300">
+                <Card className="group bg-card border-border overflow-hidden h-full hover:shadow-lg hover:border-[hsl(var(--dark-section))]/50 transition-all duration-300">
                   <CardContent className="p-0">
                     <div className="relative aspect-[3/4] overflow-hidden">
                       <img
@@ -534,7 +534,7 @@ const About = () => {
                     </div>
                     <div className="p-4 text-center">
                       <h3 className="font-semibold text-foreground">{member.name}</h3>
-                      <p className="text-sm text-primary font-medium mb-2">{member.role}</p>
+                      <p className="text-sm text-[hsl(var(--dark-section))] font-medium mb-2">{member.role}</p>
                       <p className="text-xs text-muted-foreground">{member.bio}</p>
                     </div>
                   </CardContent>
@@ -549,7 +549,7 @@ const About = () => {
       <section id="contact" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
               Get in Touch
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -568,10 +568,10 @@ const About = () => {
               </h3>
               {contactInfo.map((info, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
-                  <Card className="bg-card border-border hover:border-primary/50 transition-colors">
+                  <Card className="bg-card border-border hover:border-[hsl(var(--dark-section))]/50 transition-colors">
                     <CardContent className="p-4 flex items-start gap-4">
-                      <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <info.icon className="h-5 w-5 text-primary" />
+                      <div className="h-10 w-10 rounded-lg bg-[hsl(var(--dark-section))]/10 flex items-center justify-center flex-shrink-0">
+                        <info.icon className="h-5 w-5 text-[hsl(var(--dark-section))]" />
                       </div>
                       <div>
                         <h4 className="font-medium text-foreground">{info.title}</h4>

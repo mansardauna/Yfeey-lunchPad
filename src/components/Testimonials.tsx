@@ -52,7 +52,7 @@ const Testimonials = () => {
         {/* Testimonial Content */}
         <div className="relative max-w-4xl">
           {/* Large Quote Mark */}
-          <div className="absolute -top-4 right-0 text-primary/20">
+          <div className="absolute -top-4 right-0 text-[hsl(var(--dark-section))]/20">
             <Quote className="h-32 w-32" strokeWidth={1} />
           </div>
 
@@ -65,7 +65,7 @@ const Testimonials = () => {
             {/* Author & Navigation */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                <div className="h-12 w-12 rounded-full bg-[hsl(var(--dark-section))]/10 flex items-center justify-center text-[hsl(var(--dark-section))] font-semibold">
                   {currentTestimonial.avatar}
                 </div>
                 <div>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                 </button>
                 <button 
                   onClick={nextSlide}
-                  className="h-12 w-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary/90 transition-colors"
+                  className="h-12 w-12 rounded-lg bg-[hsl(var(--dark-section))] text-white flex items-center justify-center hover:bg-[hsl(var(--dark-section))]/90 transition-colors"
                 >
                   <ChevronRight className="h-5 w-5" />
                 </button>

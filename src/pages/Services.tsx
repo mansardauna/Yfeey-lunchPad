@@ -112,11 +112,11 @@ const Services = () => {
                 Our Services
               </h1>
               <div className="flex items-center gap-2 mb-4">
-                <div className="h-1 w-8 bg-primary" />
-                <span className="text-sm text-primary font-medium">DIGITAL SOLUTIONS</span>
+                <div className="h-1 w-8 bg-[hsl(var(--dark-section))]" />
+                <span className="text-sm text-[hsl(var(--dark-section))] font-medium">DIGITAL SOLUTIONS</span>
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                <span className="text-primary">Tailored solutions</span> that simplify complex operations and drive measurable growth.
+                <span className="text-[hsl(var(--dark-section))]">Tailored solutions</span> that simplify complex operations and drive measurable growth.
               </h2>
             </div>
             
@@ -134,7 +134,7 @@ const Services = () => {
                 <div className="grid grid-cols-2 gap-2">
                   {["Development", "Automation", "AI Integration", "Scalability", "SEO", "Maintenance"].map((item, index) => (
                     <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Plus className="h-4 w-4 text-primary" />
+                      <Plus className="h-4 w-4 text-[hsl(var(--dark-section))]" />
                       {item}
                     </div>
                   ))}
@@ -161,11 +161,11 @@ const Services = () => {
           {/* Work Process Content */}
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-2 w-2 rounded-full bg-primary" />
-              <span className="text-sm text-primary font-medium uppercase tracking-wide">Our Process</span>
+              <div className="h-2 w-2 rounded-full bg-[hsl(var(--dark-section))]" />
+              <span className="text-sm text-[hsl(var(--dark-section))] font-medium uppercase tracking-wide">Our Process</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              How we <span className="text-primary">transform your ideas</span> into powerful digital solutions.
+              How we <span className="text-[hsl(var(--dark-section))]">transform your ideas</span> into powerful digital solutions.
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               We follow a proven methodology that ensures every project is delivered on time,
@@ -183,7 +183,7 @@ const Services = () => {
             ].map((step, index) => (
               <Card key={index} className="bg-card border-border">
                 <CardContent className="p-6">
-                  <div className="h-10 w-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold mb-4">
+                  <div className="h-10 w-10 rounded-lg bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section))]-foreground flex items-center justify-center font-bold mb-4">
                     {step.number}
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">{step.title}</h3>
@@ -211,14 +211,14 @@ const Services = () => {
             {services.map((service, index) => (
               <AnimatedSection key={index} delay={index * 100}>
                 <Card
-                  className="group bg-card border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full"
+                  className="group bg-card border-border hover:border-[hsl(var(--dark-section))]/50 hover:shadow-lg transition-all duration-300 h-full"
                 >
                   <CardContent className="p-6">
-                    <span className="text-xs font-medium uppercase tracking-wider text-primary mb-2 inline-block">
+                    <span className="text-xs font-medium uppercase tracking-wider text-[hsl(var(--dark-section))] mb-2 inline-block">
                       {service.category}
                     </span>
-                    <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
-                      <service.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                    <div className="h-12 w-12 rounded-xl bg-[hsl(var(--dark-section))]/10 flex items-center justify-center mb-4 group-hover:bg-[hsl(var(--dark-section))] transition-colors duration-300">
+                      <service.icon className="h-6 w-6 text-[hsl(var(--dark-section))] group-hover:text-[hsl(var(--dark-section))]-foreground transition-colors duration-300" />
                     </div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">
                       {service.title}
@@ -232,7 +232,7 @@ const Services = () => {
                           key={i}
                           className="text-sm text-muted-foreground flex items-center gap-2"
                         >
-                          <div className="h-1.5 w-1.5 rounded-full bg-primary" />
+                          <div className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--dark-section))]" />
                           {feature}
                         </li>
                       ))}

@@ -45,9 +45,9 @@ export const DotsPattern = ({ className = "" }: { className?: string }) => (
 export const CirclesPattern = ({ className = "" }: { className?: string }) => (
   <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
     {/* Top right circle */}
-    <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
+    <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[hsl(var(--dark-section))]/5 blur-3xl" />
     {/* Bottom left circle */}
-    <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-primary/5 blur-3xl" />
+    <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[hsl(var(--dark-section))]/5 blur-3xl" />
   </div>
 );
 
@@ -77,7 +77,7 @@ export const GradientOrb = ({ className = "", position = "top-right" }: { classN
 
   return (
     <div 
-      className={`absolute w-64 h-64 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 blur-3xl pointer-events-none ${positionClasses[position as keyof typeof positionClasses] || positionClasses["top-right"]} ${className}`}
+      className={`absolute w-64 h-64 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-[hsl(var(--dark-section))]/10 to-[hsl(var(--dark-section))]/5 blur-3xl pointer-events-none ${positionClasses[position as keyof typeof positionClasses] || positionClasses["top-right"]} ${className}`}
     />
   );
 };

@@ -74,7 +74,7 @@ const NewsletterSubscription = ({ variant = "default", className = "" }: Newslet
 
   if (isSuccess) {
     return (
-      <div className={`flex items-center justify-center gap-2 text-primary-foreground ${className}`}>
+      <div className={`flex items-center justify-center gap-2 text-[hsl(var(--dark-section))]-foreground ${className}`}>
         <CheckCircle className="h-5 w-5" />
         <span>Thanks for subscribing!</span>
       </div>

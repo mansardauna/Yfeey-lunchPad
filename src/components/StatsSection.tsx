@@ -61,7 +61,7 @@ const StatItem = ({ stat, isVisible }: { stat: (typeof stats)[0]; isVisible: boo
 
   return (
     <div className="text-center p-4 md:p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
+      <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-section))] mb-2">
         {count}
         {stat.suffix}
       </div>
@@ -93,18 +93,18 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/10 relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-gradient-to-br from-[hsl(var(--dark-section))]/5 via-background to-[hsl(var(--dark-section))]/10 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-10 left-10 w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-40 h-40 md:w-64 md:h-64 rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-72 md:h-72 rounded-full bg-primary/5 blur-3xl" />
+        <div className="absolute top-10 left-10 w-32 h-32 md:w-48 md:h-48 rounded-full bg-[hsl(var(--dark-section))]/10 blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-40 h-40 md:w-64 md:h-64 rounded-full bg-[hsl(var(--dark-section))]/10 blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-72 md:h-72 rounded-full bg-[hsl(var(--dark-section))]/5 blur-3xl" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <AnimatedSection animation="fade-in-up" className="text-center mb-10 md:mb-12">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
             Our Impact
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
