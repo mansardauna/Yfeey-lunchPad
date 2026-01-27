@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import yfeeyLogo from "@/assets/yfeey-logo.png";
 
 const navLinks = [
-  { name: "SERVICES", href: "#services" },
-  { name: "CONTACT", href: "#contact" },
+  { name: "Services", href: "#services" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -77,7 +77,7 @@ const Navbar = () => {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full mt-2 bg-[hsl(259_43%_47%)] hover:bg-[hsl(259_43%_40%)] text-[hsl(var(--dark-section-foreground))]" asChild>
+              <Button className="w-full mt-2 bg-[hsl(259,27%,28%)] hover:bg-[hsl(259_43%_40%)] text-[hsl(var(--dark-section-foreground))] shadow-md" asChild>
                 <a href="mailto:info@yfeey.com">Let's Talk</a>
               </Button>
             </div>

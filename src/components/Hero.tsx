@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section-foreground))] pt-24 pb-16 md:pt-32 md:pb-24 min-h-[80vh] flex items-center overflow-hidden">
+    <section className="relative bg-black text-[hsl(var(--dark-section-foreground))] pt-24 pb-16 md:pt-32 md:pb-24 min-h-[80vh] flex items-center overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Hero Text - Centered on mobile, left-aligned on desktop */}
@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Hero SVG - Right */}
           <div className="flex-1 flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <HeroSVG />
+            <img src="./src/assets/hero.jpeg" alt="Hero Illustration" className="w-full max-w-md lg:max-w-lg" />
           </div>
         </div>
       </div>

@@ -45,11 +45,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-[hsl(var(--dark-section))] text-[hsl(var(--dark-section-foreground))] relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 bg-black text-[hsl(var(--dark-section-foreground))] relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="text-center mb-10 md:mb-12">
-            <span className="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-primary/20 text-white rounded-full text-sm font-medium mb-4">
               Contact Us
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -64,7 +64,7 @@ const ContactSection = () => {
             {/* Contact Info */}
             <AnimatedSection className="space-y-6">
               {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(var(--dark-section-foreground))]/5 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/10">
+                <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(var(--dark-section-foreground))]/5 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/40">
                   <div className="h-12 w-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
                     <item.icon className="h-5 w-5 text-white" />
                   </div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
 
             {/* Contact Form */}
             <AnimatedSection delay={200}>
-              <form onSubmit={handleSubmit} className="space-y-4 p-6 rounded-2xl bg-[hsl(var(--dark-section-foreground))]/5 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/10">
+              <form onSubmit={handleSubmit} className="space-y-4 p-6 rounded-2xl bg-[hsl(var(--dark-section-foreground))]/5 backdrop-blur-sm border border-[hsl(var(--dark-section-foreground))]/40">
                 <Input
                   type="text"
                   placeholder="Your Name"
