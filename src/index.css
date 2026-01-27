@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+Yfeey brand - Purple accent, clean modern look with Poppins font
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Purple accent color matching Yfeey logo */
+    --primary: 270 50% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 30% 96%;
+    --secondary-foreground: 270 35% 20%;
+
+    --muted: 270 20% 96%;
+    --muted-foreground: 270 15% 45%;
+
+    --accent: 270 45% 95%;
+    --accent-foreground: 270 45% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 18% 91%;
+    --input: 270 18% 91%;
+    --ring: 270 50% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 270 18% 98%;
+    --sidebar-foreground: 270 15% 30%;
+    --sidebar-primary: 270 50% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 45% 95%;
+    --sidebar-accent-foreground: 270 45% 40%;
+    --sidebar-border: 270 18% 91%;
+    --sidebar-ring: 270 50% 55%;
+
+    /* Custom brand tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(270 50% 55%) 0%, hsl(270 50% 45%) 100%);
+    --card-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(270 18% 98%) 100%);
+    --glow-primary: 0 8px 32px hsl(270 50% 55% / 0.25);
+    --glow-soft: 0 4px 20px hsl(270 50% 55% / 0.15);
+    
+    /* Dark section background - brand purple */
+    --dark-section: 259 43% 57%;
+    --dark-section-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 220 20% 6%;
+    --foreground: 220 10% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 270 40% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 20% 15%;
+    --secondary-foreground: 270 10% 90%;
+
+    --muted: 270 20% 15%;
+    --muted-foreground: 270 10% 60%;
+
+    --accent: 270 30% 20%;
+    --accent-foreground: 270 40% 70%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 20% 18%;
+    --input: 270 20% 18%;
+    --ring: 270 40% 55%;
+
+    --sidebar-background: 270 20% 8%;
+    --sidebar-foreground: 270 10% 90%;
+    --sidebar-primary: 270 40% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 30% 20%;
+    --sidebar-accent-foreground: 270 40% 70%;
+    --sidebar-border: 270 20% 15%;
+    --sidebar-ring: 270 40% 55%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(270 50% 50%) 0%, hsl(270 50% 40%) 100%);
+    --card-gradient: linear-gradient(180deg, hsl(270 25% 14%) 0%, hsl(270 25% 12%) 100%);
+    --glow-primary: 0 8px 32px hsl(270 50% 55% / 0.3);
+    --glow-soft: 0 4px 20px hsl(270 50% 55% / 0.2);
+    
+    /* Dark section background - brand purple */
+    --dark-section: 259 43% 57%;
+    --dark-section-foreground: 0 0% 100%;
+  }
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Counter animation for stats */
+@keyframes counter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-counter {
+  animation: counter 0.8s ease-out forwards;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 20s linear infinite;
+}
