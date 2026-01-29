@@ -16,6 +16,7 @@ const contactInfo = [
     icon: Phone,
     title: "Call Us",
     content: "+44 123 456 7890",
+    whatsApp: "+234 803 236 8560",
   },
   {
     icon: MapPin,
@@ -49,14 +50,14 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="text-center mb-10 md:mb-12">
-            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/20 text-white rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/70 text-white rounded-full text-sm font-medium mb-4">
               Contact Us
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Have a Project in Mind?
             </h2>
             <p className="text-[hsl(var(--dark-section-foreground))]/70 max-w-2xl mx-auto">
-              We're excited to hear from you. Let's start something special together.
+              Let's start something special together.
             </p>
           </AnimatedSection>
 
@@ -72,6 +73,9 @@ const ContactSection = () => {
                     <h4 className="font-semibold mb-1 text-black">{item.title}</h4>
                     <p className="text-black text-sm">
                       {item.content}
+                    </p>
+                    <p className="text-black text-sm">
+                      {item.whatsApp && `WhatsApp: ${item.whatsApp}`}
                     </p>
                   </div>
                 </div>

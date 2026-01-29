@@ -12,12 +12,12 @@ const faqs = [
   {
     question: "Who do you work with?",
     answer:
-      "We partner with startups, businesses, and individuals across various fields. Whether you are a solo founder or an established firm, we provide the tools to automate your workflow and scale your digital presence.",
+      "We partner with startups, businesses, and individuals across various fields.",
   },
   {
     question: "How do you approach new projects?",
     answer:
-      "We begin with a discovery session to align on your goals and challenges. From there, we deliver a strategic roadmap and involve you at every milestone. Our partnership spans the entire lifecycle—from initial design and development to deployment and post-launch support.",
+      "We start with a discovery session to align on your goals, followed by a strategic roadmap with milestone check-ins. We provide full-lifecycle support, from initial design and development through to deployment and post-launch care.",
   },
 ];
 

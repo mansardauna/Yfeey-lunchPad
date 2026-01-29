@@ -82,9 +82,7 @@ const ServicesPreview = () => {
         {/* Header */}
         <AnimatedSection animation="fade-in-up">
           <div className="text-center mb-10 md:mb-12">
-            <span className="inline-block px-4 py-1 bg-[hsl(var(--dark-section))]/10 text-[hsl(var(--dark-section))] rounded-full text-sm font-medium mb-4">
-              What We Do
-            </span>
+           
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Services
             </h2>

@@ -33,7 +33,7 @@ const Navbar = () => {
             className="flex items-center gap-2"
           >
             <img src={yfeeyLogo} alt="Yfeey" className="h-10 w-10 md:h-12 md:w-12 bg-white rounded-full p-1" />
-            <span className="font-bold text-xl md:text-2xl text-[hsl(var(--dark-section-foreground))] tracking-tight">Yfeey</span>
+            <span className="font-bold text-xl md:text-2xl text-[hsl(var(--dark-section))] tracking-tight">Yfeey</span>
           </button>
 
           {/* Desktop Navigation - Right aligned with CTA */}
