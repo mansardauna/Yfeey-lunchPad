@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Hero SVG - Right */}
           <div className="flex-1 flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <img src="/hero.jpeg" alt="Hero Illustration" className="w-[100%] max-w-lg lg:max-w-2xl" />
+            <img src="/hero.svg" alt="Hero Illustration" className="w-[100%] max-w-lg lg:max-w-2xl" />
           </div>
         </div>
       </div>
